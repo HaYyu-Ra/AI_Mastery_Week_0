@@ -1,16 +1,9 @@
-name: Run Unit Tests
+name: CI
 
-on:
-  push:
-    branches: 
-      - main
-  pull_request:
-    branches: 
-      - main
-  workflow_dispatch:
+on: [push, pull_request]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
