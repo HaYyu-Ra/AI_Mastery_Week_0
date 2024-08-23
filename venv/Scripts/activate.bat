@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=C:\Users\hayyu.ragea\AppData\Local\Programs\Python\Python312\venv
+=======
+set VIRTUAL_ENV=C:\Users\hayyu.ragea\AppData\Local\Programs\Python\Python312\pythonapp\venv
+>>>>>>> 915efb85 (Initial commit: Set up Python environment and folder structure)
 
 if not defined PROMPT set PROMPT=$P$G
 
