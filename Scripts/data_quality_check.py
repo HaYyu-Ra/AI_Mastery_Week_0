@@ -1,5 +1,7 @@
-from src.data_analysis import load_data, data_quality_check
+# Calculate and display the number of missing values in each column
+missing_values_count = df.isnull().sum()
+print(missing_values_count)
 
-if __name__ == "__main__":
-    data = load_data('C:/Users/hayyu.ragea/AppData/Local/Programs/Python/Python312/pythonapp/path/to/your/solar_farm_data.csv')
-    missing_values, outliers = data_quality_check(data)
+# Identify and display rows with outliers in GHI, DNI, or DHI columns
+outliers = df[(df['GHI'] < 0) | (df['DNI'] < 0) | (df['DHI'] < 0)]
+print(outliers)
