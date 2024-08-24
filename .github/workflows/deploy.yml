@@ -25,4 +25,4 @@ jobs:
 
       - name: Deploy to Streamlit
         run: |
-          streamlit run app.py
+          streamlit run solar_dashboard.py
