@@ -3,7 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Path to your Excel data
-file_path = r'C:\Users\hayyu.ragea\AppData\Local\Programs\Python\Python312\pythonapp\data\your_data.xlsx'
+file_path = 'C:\Users\hayyu.ragea\AppData\Local\Programs\Python\Python312\pythonapp\data\solar_farm_data.xlsx'
 
 # Load your data from Excel
 df = pd.read_excel(file_path)
@@ -15,4 +15,10 @@ correlation = df.corr()
 plt.figure(figsize=(10, 8))
 sns.heatmap(correlation, annot=True, cmap='coolwarm', vmin=-1, vmax=1)
 plt.title('Correlation Heatmap')
+
+# Save the plot to a file
+output_path = 'C:\Users\hayyu.ragea\AppData\Local\Programs\Python\Python312\pythonapp\correlation_heatmap.png'
+plt.savefig(output_path)
+
+# Show the plot
 plt.show()
