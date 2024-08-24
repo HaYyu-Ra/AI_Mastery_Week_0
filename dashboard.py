@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 st.title('Solar Farm Data Dashboard')
 
 # Path to your Excel data
-file_path = r'C:\Users\hayyu.ragea\AppData\Local\Programs\Python\Python312\pythonapp\data\your_data.xlsx'
+file_path = r'C:\Users\hayyu.ragea\AppData\Local\Programs\Python\Python312\pythonapp\data\solar_farm_data.csv'
 
 # Load the data from Excel
 data = pd.read_excel(file_path)
