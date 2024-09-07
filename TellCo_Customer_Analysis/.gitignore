@@ -15,3 +15,9 @@ docker-compose.yml
 
 # Exclude environment files
 .env
+# Ignore all files in the 'pythonapp/.venv/' directory
+pythonapp/.venv/
+
+# Ignore large files
+*.zip
+*.tar.gz
